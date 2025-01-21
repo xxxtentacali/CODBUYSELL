@@ -7,7 +7,7 @@ import requests
 # اطلاعات حساب تلگرام از طریق متغیرهای محیطی (برای امنیت بیشتر)
 api_id = int(os.getenv("API_ID", "6590627"))  # API ID
 api_hash = os.getenv("API_HASH", "f817aeb5cc76ccb664f7df6a49e6fa9a")  # API Hash
-phone_number = os.getenv("PHONE_NUMBER", "+16317175113")  # شماره تلفن شما
+telegram_session = os.getenv("TELEGRAM_SESSION", "session_name")  # نام یا مسیر فایل جلسه
 
 # شناسه کانال/گروه مبدا و مقصد
 source_channel = os.getenv("SOURCE_CHANNEL", "MsgCod")  # گروه مبدا
@@ -45,7 +45,7 @@ filtered_phrases = [
 ]
 
 # راه‌اندازی تلگرام کلاینت
-client = TelegramClient('session_name', api_id, api_hash)
+client = TelegramClient(telegram_session, api_id, api_hash)
 
 # تابع ترجمه با استفاده از API غیررسمی Google Translate
 def translate_to_english(text):
@@ -70,7 +70,7 @@ def translate_to_english(text):
 # تابع اصلی
 async def main():
     try:
-        await client.start(phone_number)
+        await client.start()
         print("✅ ربات با موفقیت متصل شد!")
 
         # دریافت پیام‌ها از کانال مبدا
@@ -171,4 +171,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    
+                    
