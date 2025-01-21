@@ -35,6 +35,6 @@ jobs:
         PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
         SOURCE_CHANNEL: ${{ secrets.SOURCE_CHANNEL }}
         DESTINATION_CHANNEL: ${{ secrets.DESTINATION_CHANNEL }}
+        TELEGRAM_SESSION: ${{ secrets.TELEGRAM_SESSION }}  # اضافه شدن متغیر TELEGRAM_SESSION
       run: |
         python telegram_bot.py
-        
