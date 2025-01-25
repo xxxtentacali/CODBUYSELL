@@ -1,18 +1,24 @@
+/* تنظیمات عمومی */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
 }
+
+/* تنظیمات هدر */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.8);
 }
 header img {
-    max-width: 200px;
+    max-width: 150px; /* کوچک‌تر شدن لوگو */
 }
+
+/* تنظیمات ناوبری */
 nav {
     text-align: center;
     margin: 20px 0;
@@ -21,25 +27,36 @@ nav a {
     text-decoration: none;
     color: #f0c040;
     margin: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
-main {
-    text-align: center;
-    padding: 20px;
+
+/* تنظیمات تصاویر گالری */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
+/* واکنش‌گرایی */
+@media (max-width: 768px) {
+    header img {
+        max-width: 100px;
+    }
+    footer img {
+        max-width: 80px;
+    }
+    .gallery img {
+        max-width: 90%;
+    }
+}
+
+/* تنظیمات فوتر */
 footer {
     background-color: #1e1e1e;
     text-align: center;
     padding: 15px;
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-.gallery img {
-    max-width: 300px;
-    border-radius: 8px;
+footer img {
+    max-width: 80px; /* کوچک‌تر شدن لوگوها در موبایل */
+    margin: 10px;
 }
