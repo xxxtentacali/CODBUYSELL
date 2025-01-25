@@ -44,9 +44,9 @@ nav a:hover {
 
 /* تنظیمات صفحه اصلی (Home) */
 main {
-    height: 100vh; /* ارتفاع صفحه به اندازه تمام صفحه */
-    background: url('./images/home_image.jpg') no-repeat center center fixed;
-    background-size: cover; /* تصویر به اندازه کل صفحه کشیده شود */
+    height: 100vh;
+    background: url('images/home_image.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,6 @@ main {
     position: relative;
 }
 
-/* تنظیمات تیتر صفحه اصلی */
 main h2 {
     font-size: 2.5rem;
     color: #fff;
