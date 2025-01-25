@@ -44,18 +44,6 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* تنظیمات صفحه اصلی (Home) */
-main {
-    height: 100vh;
-    background: url('/images/home_image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
 /* تنظیمات دکمه‌های Contact */
 button {
     background-color: #e3c7ff; /* رنگ بنفش کمرنگ */
