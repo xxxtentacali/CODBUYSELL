@@ -63,9 +63,14 @@ main h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* تنظیمات دکمه‌های Contact فقط در صفحه Contact */
+/* تنظیمات دکمه‌ها فقط در صفحه Contact */
 button {
     display: none; /* مخفی کردن دکمه‌ها در صفحه اصلی */
+}
+
+/* نمایش دکمه‌ها فقط در صفحه Contact */
+.contact-page button {
+    display: inline-block; /* نمایش دکمه‌ها در صفحه Contact */
 }
 
 /* تنظیمات فوتر */
