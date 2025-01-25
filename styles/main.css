@@ -44,21 +44,28 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* تنظیمات دکمه‌های Contact */
-button {
-    background-color: #e3c7ff; /* رنگ بنفش کمرنگ */
-    color: #000;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+/* تنظیمات صفحه اصلی (Home) */
+main {
+    height: 100vh;
+    background: url('/images/home_image.jpg') no-repeat center center fixed;
+    background-size: cover; /* پوشش کل صفحه */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
-button:hover {
-    background-color: #b8a0f7; /* رنگ بنفش تیره‌تر هنگام هاور */
-    transform: scale(1.1);
+
+/* تنظیمات تیتر صفحه اصلی */
+main h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* تنظیمات دکمه‌های Contact فقط در صفحه Contact */
+button {
+    display: none; /* مخفی کردن دکمه‌ها در صفحه اصلی */
 }
 
 /* تنظیمات فوتر */
