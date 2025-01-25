@@ -74,7 +74,7 @@ button {
     padding: 15px 30px;
     font-size: 18px;
     color: white;
-    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* ترکیب بنفش پررنگ و کمرنگ */
     border: none;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -83,8 +83,9 @@ button {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
+
 .contact-page button:hover {
-    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* معکوس کردن رنگ در حالت hover */
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
