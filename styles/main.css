@@ -10,16 +10,19 @@ body {
 header {
     text-align: center;
     position: relative;
+    height: 100vh; /* ارتفاع کل صفحه */
     background: url('/images/home_image.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* قرار دادن محتوا در بالای صفحه */
+    align-items: center;
 }
 
 header img {
     max-width: 120px; /* اندازه لوگو */
     height: auto;
-    margin: 20px auto 0; /* وسط‌چین کردن لوگو */
-    display: block;
+    margin-top: 20px; /* فاصله لوگو از بالای صفحه */
 }
 
 /* تنظیمات ناوبری */
@@ -27,7 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 100px; /* پایین‌تر آوردن دکمه‌ها */
+    margin-top: 50px; /* فاصله دکمه‌ها از لوگو */
 }
 
 nav a {
@@ -36,7 +39,7 @@ nav a {
     font-weight: bold;
     color: #fff;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #7a6cc4, #b5a6e5);
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
@@ -44,25 +47,9 @@ nav a {
 }
 
 nav a:hover {
-    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* تغییر رنگ در حالت hover */
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* تنظیمات محتوای اصلی */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: calc(100vh - 200px);
-    background: transparent; /* شفافیت برای نمایش کامل بک‌گراند */
-}
-
-main h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* تنظیمات فوتر */
@@ -71,13 +58,11 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
 footer img {
     max-width: 60px;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 footer img:hover {
     transform: scale(1.2);
 }
@@ -87,9 +72,11 @@ footer img:hover {
     header img {
         max-width: 100px;
     }
-
     nav a {
         font-size: 16px;
         padding: 8px 15px;
+    }
+    footer img {
+        max-width: 50px;
     }
 }
