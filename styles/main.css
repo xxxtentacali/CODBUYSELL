@@ -9,20 +9,14 @@ body {
 /* تنظیمات هدر */
 header {
     text-align: center;
-    position: relative;
-    height: 100vh; /* ارتفاع کل صفحه */
+    padding: 20px;
     background: url('/images/home_image.jpg') no-repeat center center fixed;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* قرار دادن محتوا در بالای صفحه */
-    align-items: center;
+    position: relative;
 }
-
 header img {
-    max-width: 120px; /* اندازه لوگو */
+    max-width: 150px;
     height: auto;
-    margin-top: 20px; /* فاصله لوگو از بالای صفحه */
 }
 
 /* تنظیمات ناوبری */
@@ -30,24 +24,68 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px; /* فاصله دکمه‌ها از لوگو */
+    margin: 20px 0;
 }
-
 nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
 }
-
 nav a:hover {
-    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* تغییر رنگ در حالت hover */
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* تنظیمات صفحه اصلی (Home) */
+main {
+    height: 100vh;
+    background: url('/images/home_image.jpg') no-repeat center center fixed;
+    background-size: cover; /* پوشش کل صفحه */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* تنظیمات تیتر صفحه اصلی */
+main h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* مخفی کردن دکمه‌ها در صفحه اصلی */
+button {
+    display: none; /* مخفی کردن دکمه‌ها در صفحه اصلی */
+}
+
+/* نمایش دکمه‌ها فقط در صفحه Contact */
+.contact-page button {
+    display: inline-block; /* نمایش دکمه‌ها در صفحه Contact */
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* ترکیب بنفش پررنگ و کمرنگ */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-page button:hover {
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* معکوس کردن رنگ در حالت hover */
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -72,11 +110,14 @@ footer img:hover {
     header img {
         max-width: 100px;
     }
-    nav a {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
     footer img {
         max-width: 50px;
+    }
+    .gallery img {
+        max-width: 90%;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
