@@ -32,14 +32,14 @@ nav a {
     font-weight: bold;
     color: #fff;
     padding: 15px 30px;
-    background: linear-gradient(90deg, #f85032, #e73827);
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
 }
 nav a:hover {
-    background: linear-gradient(90deg, #e73827, #f85032);
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -71,22 +71,6 @@ button {
 button:hover {
     background-color: #b8a0f7; /* رنگ بنفش تیره‌تر هنگام هاور */
     transform: scale(1.1);
-}
-
-/* تنظیمات گالری تصاویر */
-.gallery {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.gallery img {
-    max-width: 200px; /* اندازه کوچک‌تر برای تصاویر */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-.gallery img:hover {
-    transform: scale(1.05); /* کمی بزرگتر شدن هنگام هاور */
 }
 
 /* تنظیمات فوتر */
