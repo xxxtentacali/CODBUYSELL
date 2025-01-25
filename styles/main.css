@@ -9,15 +9,14 @@ body {
 /* تنظیمات هدر */
 header {
     text-align: center;
-    padding: 10px 0; /* کاهش فاصله هدر */
+    padding: 10px 0;
     position: relative;
-    margin-top: -50px; /* هدر را بالاتر می‌برد */
 }
 
 header img {
-    max-width: 120px; /* کاهش اندازه لوگو */
+    max-width: 120px;
     height: auto;
-    margin-bottom: 10px; /* فاصله کمی بین لوگو و منو */
+    margin-bottom: 10px;
 }
 
 /* تنظیمات ناوبری */
@@ -25,7 +24,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: -50px 0 30px; /* بالا بردن منو و تنظیم فاصله با محتوای اصلی */
+    margin: 0; /* حذف فاصله اضافی */
+    position: absolute; /* دکمه‌ها را در موقعیت دلخواه قرار می‌دهیم */
+    top: 50%; /* تنظیم دکمه‌ها در وسط صفحه */
+    left: 50%; /* مرکز افقی */
+    transform: translate(-50%, -50%); /* تنظیم دقیق موقعیت در مرکز */
 }
 
 nav a {
@@ -33,31 +36,32 @@ nav a {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    padding: 10px 20px; /* کاهش اندازه دکمه‌ها */
-    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
+    padding: 15px 50px; /* اندازه یکسان برای تمام دکمه‌ها */
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+    min-width: 150px; /* تضمین یکسان بودن عرض دکمه‌ها */
+    text-align: center;
 }
 
 nav a:hover {
-    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* تغییر رنگ در حالت hover */
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* تنظیمات صفحه اصلی (Home) */
 main {
-    height: calc(100vh - 200px); /* کاهش ارتفاع محتوای اصلی برای ایجاد فضای بیشتر بالا */
+    height: calc(100vh - 200px);
     background: url('/images/home_image.jpg') no-repeat center center fixed;
-    background-size: cover; /* پوشش کل صفحه */
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    padding-top: 20px; /* تنظیم فاصله از بالای محتوای اصلی */
 }
 
 /* تنظیمات تیتر صفحه اصلی */
@@ -73,11 +77,13 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 footer img {
     max-width: 60px;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
+
 footer img:hover {
     transform: scale(1.2);
 }
@@ -92,6 +98,7 @@ footer img:hover {
     }
     nav a {
         font-size: 16px;
-        padding: 8px 15px; /* کاهش اندازه دکمه‌ها در موبایل */
+        padding: 10px 20px; /* کاهش اندازه دکمه‌ها در موبایل */
+        min-width: 120px; /* تضمین اندازه کوچک‌تر در موبایل */
     }
 }
