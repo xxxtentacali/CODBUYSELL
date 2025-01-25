@@ -8,27 +8,38 @@ body {
     color: #fff;
 }
 
-/* تنظیمات هدر */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(30, 30, 30, 0.8);
+/* استایل لینک‌های بخش تماس */
+.contact-link {
+    color: #28a745; /* رنگ سبز */
+    font-size: 1.8rem; /* بزرگ‌تر */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-header img {
-    max-width: 150px;
-    height: auto;
+.contact-link:hover {
+    color: #218838; /* رنگ سبز تیره‌تر هنگام هاور */
 }
 
-/* تنظیمات ناوبری */
-nav {
+/* استایل گالری تصاویر */
+.gallery {
     display: flex;
     justify-content: center;
-    gap: 20px; /* فاصله بین دکمه‌ها */
-    margin: 20px 0;
+    padding: 20px;
 }
+.gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1); /* کمی بزرگ‌تر هنگام هاور */
+}
+
+/* استایل دکمه‌ها */
 nav a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     padding: 15px 30px;
@@ -40,23 +51,8 @@ nav a {
 }
 nav a:hover {
     background: linear-gradient(90deg, #e73827, #f85032);
-    transform: scale(1.1); /* بزرگنمایی هنگام هاور */
+    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* تنظیمات گالری تصاویر */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-.gallery img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* تنظیمات فوتر */
@@ -67,12 +63,11 @@ footer {
 }
 footer img {
     max-width: 60px;
-    height: auto;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
 footer img:hover {
-    transform: scale(1.2); /* بزرگنمایی لوگو هنگام هاور */
+    transform: scale(1.2);
 }
 
 /* واکنش‌گرایی */
