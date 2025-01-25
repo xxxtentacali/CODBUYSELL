@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover; /* تصویر بک‌گراند کاملاً پوشش دهد */
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
 }
 
@@ -21,25 +21,27 @@ header img {
 
 /* تنظیمات ناوبری */
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* فاصله بین دکمه‌ها */
     margin: 20px 0;
 }
 nav a {
     text-decoration: none;
-    color: #f0c040;
-    margin: 0 15px;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: 2px solid #f0c040;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #f0c040, #ff9500);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #f85032, #e73827);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
 }
 nav a:hover {
-    background: linear-gradient(45deg, #ff9500, #f0c040);
-    color: #fff;
-    transform: scale(1.1);
+    background: linear-gradient(90deg, #e73827, #f85032);
+    transform: scale(1.1); /* بزرگنمایی هنگام هاور */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* تنظیمات گالری تصاویر */
@@ -64,7 +66,7 @@ footer {
     padding: 15px;
 }
 footer img {
-    max-width: 60px; /* لوگوهای اعتماد کوچک‌تر شدند */
+    max-width: 60px;
     height: auto;
     margin: 10px;
     transition: transform 0.3s ease-in-out;
@@ -83,5 +85,9 @@ footer img:hover {
     }
     .gallery img {
         max-width: 90%;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
