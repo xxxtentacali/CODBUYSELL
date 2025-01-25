@@ -54,30 +54,21 @@ main {
     position: relative;
 }
 
-/* تنظیمات تیتر صفحه اصلی */
-main h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
 /* تنظیمات دکمه Contact */
-nav a {
-    font-size: 18px;
-    font-weight: bold;
+button {
+    background-color: #800080; /* رنگ بنفش */
     color: #fff;
+    font-size: 1.2rem;
     padding: 15px 30px;
-    background: linear-gradient(90deg, #32f850, #27e7f8); /* تغییر رنگ برای خیره‌کننده بودن */
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر */
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-nav a:hover {
-    background: linear-gradient(90deg, #27e7f8, #32f850);
+button:hover {
+    background-color: #9b30b1; /* رنگ بنفش تیره‌تر هنگام هاور */
     transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* بزرگتر کردن سایه */
 }
 
 /* تنظیمات گالری تصاویر */
