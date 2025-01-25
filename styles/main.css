@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; /* تصویر بک‌گراند کاملاً پوشش دهد */
     color: #fff;
 }
 
@@ -15,7 +15,8 @@ header {
     background-color: rgba(30, 30, 30, 0.8);
 }
 header img {
-    max-width: 150px; /* کوچک‌تر شدن لوگو */
+    max-width: 150px;
+    height: auto;
 }
 
 /* تنظیمات ناوبری */
@@ -28,13 +29,48 @@ nav a {
     color: #f0c040;
     margin: 0 15px;
     font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #f0c040;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f0c040, #ff9500);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+    background: linear-gradient(45deg, #ff9500, #f0c040);
+    color: #fff;
+    transform: scale(1.1);
 }
 
-/* تنظیمات تصاویر گالری */
+/* تنظیمات گالری تصاویر */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
 .gallery img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* تنظیمات فوتر */
+footer {
+    background-color: rgba(30, 30, 30, 0.8);
+    text-align: center;
+    padding: 15px;
+}
+footer img {
+    max-width: 60px; /* لوگوهای اعتماد کوچک‌تر شدند */
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+footer img:hover {
+    transform: scale(1.2); /* بزرگنمایی لوگو هنگام هاور */
 }
 
 /* واکنش‌گرایی */
@@ -43,20 +79,9 @@ nav a {
         max-width: 100px;
     }
     footer img {
-        max-width: 80px;
+        max-width: 50px;
     }
     .gallery img {
         max-width: 90%;
     }
-}
-
-/* تنظیمات فوتر */
-footer {
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 15px;
-}
-footer img {
-    max-width: 80px; /* کوچک‌تر شدن لوگوها در موبایل */
-    margin: 10px;
 }
