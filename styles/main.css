@@ -71,26 +71,22 @@ button {
 /* نمایش دکمه‌ها فقط در صفحه Contact */
 .contact-page button {
     display: inline-block; /* نمایش دکمه‌ها در صفحه Contact */
-}
-
-/* تنظیمات دکمه‌های ADMIN و JOIN TO CHANNEL */
-button {
-    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
     padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #7a6cc4, #b5a6e5); /* تلفیقی از بنفش پررنگ و کمرنگ */
     border: none;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px;
     cursor: pointer;
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
-
-button:hover {
-    background: linear-gradient(90deg, #b5a6e5, #7a6cc4); /* معکوس شدن رنگ‌ها */
-    transform: scale(1.1); /* بزرگ‌تر شدن دکمه */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* سایه قوی‌تر */
+.contact-page button:hover {
+    background: linear-gradient(90deg, #b5a6e5, #7a6cc4);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* تنظیمات فوتر */
